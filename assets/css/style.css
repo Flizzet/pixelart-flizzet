@@ -1,0 +1,129 @@
+@font-face {
+    font-family: pixelarial;
+    src: url(fonts/pixelarial.ttf);
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'pixelarial';
+  color: #583f44;
+  /*border: rgba(0, 0, 0, 0.3) 1px solid;*/
+  transition: 0.2s;
+}
+body {
+  background-color: #25e2cd;
+}
+p {
+  font-size: 20px;
+}
+footer {
+}
+.full-size-page {
+  height: 100vh;
+  min-height: 100vh;
+}
+.card {
+  box-shadow: 0 8px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  background: #f9f9ee;
+  padding: 10px 50px;
+  border: #864c4a 6px solid;
+}
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/* Background images */
+#background-images img {
+  image-rendering: optimizeSpeed;             /* Fallback                       */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+  height: 100%;
+  width: auto;
+  position: fixed;
+  top: 0px;
+  z-index: -1;
+}
+#background-images .background-image-left {
+  left: 0px;
+}
+#background-images .background-image-right {
+  right: 0px;
+}
+
+/* Cover page */
+.intro-image img {
+  image-rendering: optimizeSpeed;             /* Fallback                       */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-image img:hover {
+  top: 51%;
+}
+
+/* Styles */
+.style-thumb {
+  text-align: center;
+  transition: 0.2s;
+}
+
+/* Showcase */
+.showcase-category .showcase-image {
+  image-rendering: pixelated;
+  height: 200px;
+  width: auto;
+  padding: 10px;
+  margin: 20px 5px;
+  transition: 0.1s;
+}
+#environments .showcase-image {
+  height: 300px;
+  width: auto;
+}
+#gui .showcase-image {
+  height: 500px;
+  width: auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f9f9ee;
+  border-bottom: #864c4a 6px solid;
+  box-shadow: 0 8px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+/*** Media constraints ***/
+@media (max-width: 768px) {
+  .card {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  * {
+    text-align: center;
+  }
+  .intro-image img {
+    width: 100%;
+  }
+}
